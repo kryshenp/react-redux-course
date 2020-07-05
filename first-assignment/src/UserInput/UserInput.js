@@ -1,10 +1,25 @@
 import React from "react";
-// import "UserInput.css";
 
-const userinput = () => {
+const userinput = (props) => {
+  const inputStyle = {
+    border: "2px solid red",
+    color: "green",
+  };
+
+  const inputContainerStyle = {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  };
+
   return (
-    <div className="UserInput">
-      <input type="text" />
+    <div style={inputContainerStyle}>
+      <input
+        type="text"
+        onChange={props.changed}
+        style={inputStyle}
+        value={props.defaultValue}
+      />
     </div>
   );
 };

@@ -1,11 +1,11 @@
 import React from "react";
-// import "UserOutput.css";
+import "./UserOutput.css";
 
 const useroutput = (props) => {
   return (
     <div className="UserOutput">
-      <p>Hi! My name is {props.username}</p>
-      <p>def</p>
+      <p onClick={props.click}>Hi! My name is {props.username}</p>
+      <p>I hope I'll be overwritten!</p>
     </div>
   );
 };
