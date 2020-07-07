@@ -9,6 +9,8 @@ const person = (props) => {
         I live here for {props.age} years!
       </p>
       <p>{props.children}</p>
+      {/* we need to provide this .changed property poining to something eventListener or some method
+       which correctly updates the state.  */}
       <input type="text" onChange={props.changed} value={props.name} />
     </div>
   );
